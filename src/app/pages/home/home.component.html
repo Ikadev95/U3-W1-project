@@ -3,7 +3,7 @@
 
   <div class="container py-2 brand">
     <div class="row">
-      <div class="col-4" *ngFor="let image of imagesCar">
+      <div class="col" *ngFor="let image of imagesCar">
         <img [src]="image.logoPath" alt="{{ image.brandName }} Logo" (click)="navigateToBrandPage(image.brandName)" />
       </div>
     </div>
@@ -16,8 +16,8 @@
           <img src="{{car.modelImage}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{car.model}}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Vai al dettaglio</a>
+            <p class="card-text" *ngIf="!car.available">non disponibile</p>
+            <a [routerLink]="['/brand',car.brand]" class="btn btn-primary">Tutte le auto {{car.brand}}</a>
           </div>
         </div>
       </div>
