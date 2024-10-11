@@ -1,6 +1,15 @@
 <img src="sfondo.jpg" class="img-fluid" alt="car">
 <main class="bg-dark">
-  <div class="container py-3">
+
+  <div class="container py-2 brand">
+    <div class="row">
+      <div class="col-4" *ngFor="let image of imagesCar">
+        <img [src]="image.logoPath" alt="{{ image.brandName }} Logo" (click)="navigateToBrandPage(image.brandName)" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-3 cars">
     <div class="row row-gap-4">
       <div class="col-3" *ngFor="let car of cars">
         <div class="card bg-black text-bg-dark border-0">
@@ -14,4 +23,5 @@
       </div>
     </div>
   </div>
+
 </main>

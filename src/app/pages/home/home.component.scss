@@ -3,11 +3,16 @@ img{
   width: 100%;
   object-fit: cover;
 }
-main{
+.cars{
   min-height: 54vh;
   img{
     height: 200px;
     width: 100%;
     object-fit: cover;
   }
+}
+.brand img{
+  cursor:pointer;
+  max-height: 100px;
+  object-fit: contain;
 }

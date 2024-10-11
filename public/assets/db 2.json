@@ -1,7 +1,7 @@
 [
     {
         "brand": "Fiat",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "brandLogo": "fiat.png",
         "model": "500X",
         "modelImage": "https://cdn-img.automoto.it/images/27230929/HOR_STD/800x/fiat-500x-hybrid-2022-01.jpeg",
         "year": 2014,
@@ -10,7 +10,7 @@
     },
     {
         "brand": "Fiat",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "brandLogo": "fiat.png",
         "model": "500 Abarth",
         "modelImage": "https://www.abarth.it/content/dam/abarth/gamma/my23/abarth-595-695/dealer/Abarth-Dealer-Mobile-768x604.jpg",
         "year": 2010,
@@ -19,7 +19,7 @@
     },
     {
         "brand": "Ford",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "brandLogo": "ford.png",
         "model": "Bronco",
         "modelImage": "https://cdn.auto.it/img/1200/600/2020/07/14/170255672-92302ce7-bcf9-40c5-b83e-12242382fc64.jpg",
         "year": 2009,
@@ -28,7 +28,7 @@
     },
     {
         "brand": "Ford",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "brandLogo": "ford.png",
         "model": "Mustang",
         "modelImage": "https://www.cavauto.com/wp-content/webp-express/webp-images/uploads/2024/05/ford-mustang-2024.jpg.webp",
         "year": 2024,
@@ -37,7 +37,7 @@
     },
     {
         "brand": "Audi",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "brandLogo": "audi.png",
         "model": "A3",
         "modelImage": "https://cdnwp.dealerk.com/eed49ed7/uploads/sites/668/2020/03/audi-a3-sportback-2020-3.jpg",
         "year": 2012,
@@ -46,7 +46,7 @@
     },
     {
         "brand": "Audi",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "brandLogo": "audi.png",
         "model": "A8",
         "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/AUDI/A8/40851_SEDAN-4-DOORS/audi-a8-2021-front-side-1.jpg",
         "year": 2020,
