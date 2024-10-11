@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { BrandPageComponent } from './pages/brand-page/brand-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { DetailComponent } from './pages/detail/detail.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path:'brand/:brandName',
     component: BrandPageComponent
+  },
+  {
+    path:'detail/:model',
+    component: DetailComponent
   },
   {
     path:'**',

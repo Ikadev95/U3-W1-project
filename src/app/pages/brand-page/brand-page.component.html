@@ -12,6 +12,7 @@
             </div>
             <p class="card-text my-1">Anno : {{car.year}}</p>
             <p class="card-text my-1">Prezzo : {{car.price | currency : 'EUR' }}</p>
+            <a [routerLink]="['/detail',car.model]" class="btn btn-outline-secondary btn-sm mt-1">Dettagli</a>
           </div>
         </div>
       </div>
