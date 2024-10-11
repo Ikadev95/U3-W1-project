@@ -32,16 +32,11 @@ export class HomeComponent implements OnInit {
           }
         }
 
-
         this.randomCars = this.getRandomCars(this.cars,2)
       })
       .catch((err) => {
         console.log(err);
       });
-  }
-
-  navigateToBrandPage(brandName: string) {
-    this.router.navigate(['/brand', brandName]);
   }
   getRandomCars(cars: iCar[], items:number){
     if (cars.length < items) {

@@ -8,7 +8,7 @@
           <div class="card-body">
             <div class="d-flex justify-content-between wrapCardHeader">
               <h5 class="card-title">{{car.model}}</h5>
-              <span class = "badge text-bg-danger" *ngIf="!car.available">esaurita</span>
+              <span class = "badge text-bg-danger" *ngIf="!car.available">non disponibile</span>
             </div>
             <p class="card-text my-1">Anno : {{car.year}}</p>
             <p class="card-text my-1">Prezzo : {{car.price | currency : 'EUR' }}</p>

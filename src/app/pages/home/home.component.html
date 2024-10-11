@@ -4,7 +4,7 @@
   <div class="container py-2 brand">
     <div class="row">
       <div class="col" *ngFor="let image of imagesCar">
-        <img [src]="image.logoPath" alt="{{ image.brandName }} Logo" (click)="navigateToBrandPage(image.brandName)" />
+        <img [src]="image.logoPath" alt="{{ image.brandName }} Logo" [routerLink]="['/brand', image.brandName]" />
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
           <div class="card-body">
             <div class="d-flex justify-content-between wrapCardHeader">
               <h5 class="card-title">{{car.model}}</h5>
-              <span class = "badge text-bg-danger" *ngIf="!car.available">esaurita</span>
+              <span class = "badge text-bg-danger" *ngIf="!car.available">non disponibile</span>
             </div>
             <p class="card-text my-1">Anno : {{car.year}}</p>
             <p class="card-text my-1">Prezzo : {{car.price | currency : 'EUR' }}</p>
