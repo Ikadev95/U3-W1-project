@@ -16,9 +16,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     fetch('./assets/db 2.json')
-      .then((res) => res.json())
-      .then((dati) => {
-        console.log(dati);
+      .then((res) => <Promise<iCar[]>> res.json())
+      .then((dati: iCar[]) => {
+
         this.cars = dati;
 
         for (let i = 0; i < dati.length; i++) {
@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
           }
         }
 
-        console.log(this.imagesCar);
+
         this.randomCars = this.getRandomCars(this.cars,2)
       })
       .catch((err) => {
@@ -47,13 +47,19 @@ export class HomeComponent implements OnInit {
     if (cars.length < items) {
       return cars;
     }
-    let index1 = Math.floor(Math.random() * cars.length);
-    let index2;
 
+    let index1:number;
+    do {
+      index1 = Math.floor(Math.random() * cars.length);
+    } while (!cars[index1].available);
+
+    let index2:number;
 
     do {
       index2 = Math.floor(Math.random() * cars.length);
-    } while (index2 === index1);
+    } while (index2 === index1 || !cars[index2].available);
+
+    // così le auto in evidenza sono sempre disponibili e non compaiono modelli esauriti
 
     return [cars[index1], cars[index2]];
   }

@@ -60,7 +60,7 @@
       "modelImage": "https://redergo-cms.topgearitalia.it/sites/default/files/styles/large_21_9_2x/public/2024-07/Nuova-Audi-A5-2024-Avant_005.jpeg?itok=LD11wZ_e",
       "year": 2022,
       "price": 67700,
-      "available": true
+      "available": false
   },
   {
       "brand": "Audi",
@@ -69,7 +69,7 @@
       "modelImage": "https://cdn.motor1.com/images/mgl/vxoJ0Y/s1/2023-audi-r8-v10-gt-rwd.jpg",
       "year": 2024,
       "price": 4921700,
-      "available": false
+      "available": true
   },
   {
     "brand": "Ford",
@@ -78,6 +78,6 @@
     "modelImage": "https://cdn.motor1.com/images/mgl/er8ZP/s1/ford-explorer.jpg",
     "year": 2023,
     "price": 23700,
-    "available": false
+    "available": true
 }
 ]

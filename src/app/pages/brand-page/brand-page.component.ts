@@ -9,6 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BrandPageComponent implements OnInit {
   cars: iCar[] = [];
+  availableCars: iCar[] = [];
+  notAvailableCars: iCar[] = [];
   paramsBrand!: string;
 
   constructor(private route: ActivatedRoute) {}
@@ -22,11 +24,14 @@ export class BrandPageComponent implements OnInit {
 
   fetchCars() {
     fetch('./assets/db 2.json')
-      .then((res) => res.json())
-      .then((dati) => {
-        console.log(dati);
+      .then((res) => <Promise<iCar[]>> res.json())
+      .then((dati: iCar[]) => {
+
         this.cars = dati.filter((car:iCar) => car.brand === this.paramsBrand);
-        console.log(this.cars);
+        this.availableCars = this.cars.filter((car:iCar)=> car.available);
+        this.notAvailableCars = this.cars.filter((car:iCar)=> car.available === false);
+        this.cars = this.availableCars.concat(this.notAvailableCars);
+        //così le auto esaurite compariranno sempre per ultime all'utente
       })
       .catch((err) => {
         console.log(err);
