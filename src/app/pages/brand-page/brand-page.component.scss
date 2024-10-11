@@ -6,3 +6,17 @@ main{
     object-fit: cover;
   }
 }
+.card{
+  height: 100%;
+}
+.badge{
+  height: fit-content;
+}
+.wrapCardHeader{
+  align-items: center;
+  margin-bottom: 4px;
+  h5{
+    margin-bottom: 0;
+  }
+}
+

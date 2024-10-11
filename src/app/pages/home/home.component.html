@@ -13,11 +13,15 @@
     <div class="row row-gap-4">
       <div class="col-3" *ngFor="let car of cars">
         <div class="card bg-black text-bg-dark border-0">
-          <img src="{{car.modelImage}}" class="card-img-top" alt="...">
+          <img src="{{car.modelImage}}" class="card-img-top" alt="car">
           <div class="card-body">
-            <h5 class="card-title">{{car.model}}</h5>
-            <p class="card-text" *ngIf="!car.available">non disponibile</p>
-            <a [routerLink]="['/brand',car.brand]" class="btn btn-primary">Tutte le auto {{car.brand}}</a>
+            <div class="d-flex justify-content-between wrapCardHeader">
+              <h5 class="card-title">{{car.model}}</h5>
+              <span class = "badge text-bg-danger" *ngIf="!car.available">esaurita</span>
+            </div>
+            <p class="card-text my-1">Anno : {{car.year}}</p>
+            <p class="card-text my-1">Prezzo : {{car.price | currency : 'EUR' }}</p>
+            <a [routerLink]="['/brand',car.brand]" class="btn btn-outline-secondary btn-sm mt-1">Tutte le auto {{car.brand}}</a>
           </div>
         </div>
       </div>
