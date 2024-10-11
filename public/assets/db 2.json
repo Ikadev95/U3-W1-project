@@ -22,7 +22,7 @@
         "brandLogo": "ford.png",
         "model": "Bronco",
         "modelImage": "https://cdn.auto.it/img/1200/600/2020/07/14/170255672-92302ce7-bcf9-40c5-b83e-12242382fc64.jpg",
-        "year": 2009,
+        "year": 2019,
         "price": 5200,
         "available": false
     },
@@ -52,5 +52,32 @@
         "year": 2020,
         "price": 41700,
         "available": false
-    }
+    },
+    {
+      "brand": "Audi",
+      "brandLogo": "audi.png",
+      "model": "A5",
+      "modelImage": "https://redergo-cms.topgearitalia.it/sites/default/files/styles/large_21_9_2x/public/2024-07/Nuova-Audi-A5-2024-Avant_005.jpeg?itok=LD11wZ_e",
+      "year": 2022,
+      "price": 67700,
+      "available": true
+  },
+  {
+      "brand": "Audi",
+      "brandLogo": "audi.png",
+      "model": "R8",
+      "modelImage": "https://cdn.motor1.com/images/mgl/vxoJ0Y/s1/2023-audi-r8-v10-gt-rwd.jpg",
+      "year": 2024,
+      "price": 4921700,
+      "available": false
+  },
+  {
+    "brand": "Ford",
+    "brandLogo": "ford.png",
+    "model": "Explorer",
+    "modelImage": "https://cdn.motor1.com/images/mgl/er8ZP/s1/ford-explorer.jpg",
+    "year": 2023,
+    "price": 23700,
+    "available": false
+}
 ]
