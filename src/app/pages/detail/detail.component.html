@@ -4,8 +4,10 @@
     <div class="col-12 col-md-6">
       <img src="{{car.modelImage}}" class="card-img-top" alt="car">
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 text-white">
       <h2 class="pt-2 text-white">{{car.model}}</h2>
+      <p class="card-text my-1">Anno : {{car.year}}</p>
+      <p class="card-text my-1">Prezzo : {{car.price | currency : 'EUR' }}</p>
     </div>
   </div>
 
