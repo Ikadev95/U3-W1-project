@@ -1,1 +1,16 @@
-<p>brand-page works!</p>
+<main class="bg-dark">
+  <div class="container py-3">
+    <div class="row row-gap-4">
+      <div class="col-3" *ngFor="let car of cars">
+        <div class="card bg-black text-bg-dark border-0">
+          <img src="{{car.modelImage}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{car.model}}</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Vai al dettaglio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

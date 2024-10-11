@@ -15,7 +15,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path:'brand:name',
+    path:'brand/:brandName',
     component: BrandPageComponent
   },
   {
