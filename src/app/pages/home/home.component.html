@@ -10,8 +10,9 @@
   </div>
 
   <div class="container py-3 cars">
+    <h2 class="text-white text-center mb-4">Modelli in Evidenza</h2>
     <div class="row row-gap-4">
-      <div class="col-3" *ngFor="let car of cars">
+      <div class="col-6" *ngFor="let car of randomCars">
         <div class="card bg-black text-bg-dark border-0">
           <img src="{{car.modelImage}}" class="card-img-top" alt="car">
           <div class="card-body">

@@ -10,6 +10,7 @@ import { iCar } from '../../Interfaces/i-car';
 export class HomeComponent implements OnInit {
   cars: iCar[] = [];
   imagesCar: { logoPath: string; brandName: string }[] = [];
+  randomCars: iCar[] = [];
 
   constructor(private router: Router) {}
 
@@ -32,6 +33,7 @@ export class HomeComponent implements OnInit {
         }
 
         console.log(this.imagesCar);
+        this.randomCars = this.getRandomCars(this.cars,2)
       })
       .catch((err) => {
         console.log(err);
@@ -41,4 +43,19 @@ export class HomeComponent implements OnInit {
   navigateToBrandPage(brandName: string) {
     this.router.navigate(['/brand', brandName]);
   }
+  getRandomCars(cars: iCar[], items:number){
+    if (cars.length < items) {
+      return cars;
+    }
+    let index1 = Math.floor(Math.random() * cars.length);
+    let index2;
+
+
+    do {
+      index2 = Math.floor(Math.random() * cars.length);
+    } while (index2 === index1);
+
+    return [cars[index1], cars[index2]];
+  }
 }
+
